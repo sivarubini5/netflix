@@ -1,0 +1,118 @@
+.signin {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+}
+
+.signin-brand {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  background:
+    linear-gradient(160deg, rgba(10, 10, 13, 0.55), rgba(10, 10, 13, 0.92)),
+    url('https://picsum.photos/seed/nxtflixhero/1600/900') center/cover no-repeat;
+}
+
+.signin-brand-content {
+  max-width: 460px;
+}
+
+.signin-logo {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  letter-spacing: 0.06em;
+  margin: 0 0 40px;
+}
+
+.signin-logo span {
+  color: var(--color-accent);
+}
+
+.signin-brand h1 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1.2;
+  margin: 0 0 14px;
+}
+
+.signin-tagline {
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.signin-form-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: var(--color-bg);
+}
+
+.signin-form {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+}
+
+.signin-form h2 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+  margin: 0 0 24px;
+}
+
+.signin-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: 6px;
+}
+
+.signin-input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-card);
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+.signin-input:focus {
+  border-color: var(--color-accent);
+  outline: none;
+}
+
+.signin-submit {
+  margin-top: 8px;
+  width: 100%;
+  padding: 13px;
+  font-size: 1rem;
+}
+
+.signin-error {
+  background: var(--color-accent-soft);
+  border: 1px solid var(--color-accent);
+  color: #ff8b98;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .signin {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  .signin-brand {
+    padding: 40px 24px;
+    min-height: 260px;
+  }
+  .signin-form-panel {
+    padding: 32px 24px;
+  }
+}

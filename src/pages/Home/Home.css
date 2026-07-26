@@ -1,0 +1,67 @@
+.hero {
+  position: relative;
+  min-height: 380px;
+  display: flex;
+  align-items: flex-end;
+  background: url('https://picsum.photos/seed/nxtflixhero/1600/900') center/cover no-repeat;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 10, 13, 0.35) 0%,
+    rgba(10, 10, 13, 0.75) 65%,
+    var(--color-bg) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  padding-bottom: 48px;
+  max-width: 720px;
+}
+
+.hero-content h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  letter-spacing: 0.01em;
+  margin: 10px 0 14px;
+}
+
+.hero-subtitle {
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.home-content {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.browse-section {
+  margin-top: 20px;
+}
+
+.browse-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: 0.03em;
+  margin: 0 0 18px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 24px 18px;
+}
+
+.empty-state {
+  color: var(--color-text-muted);
+  padding: 40px 0;
+  text-align: center;
+  font-size: 1rem;
+}
